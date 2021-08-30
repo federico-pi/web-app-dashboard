@@ -337,4 +337,179 @@ template {
   display: none;
 }
 
+* {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #222;
+  font-size: 1.35em;
+  font-weight: 400;
+}
+
+h2 {
+  color: #444;
+  font-size: 1.15em;
+  font-weight: 400;
+}
+
+p {
+  font-weight: 400;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #7479bd;
+  padding: 18px 7px;
+  height: 80px;
+  width: 100vw;
+  color: white;
+}
+
+.app-logo {
+  font-size: 25px;
+  font-weight: 400;
+  margin: auto;
+}
+
+.bell-icon {
+  height: 60%;
+  margin: auto;
+  fill: white;
+}
+
+.profile-image {
+  border-radius: 50%;
+  margin: auto;
+  height: 100%;
+}
+
+.profile-image-div {
+  border-left: white solid 1px;
+  padding-left: 13px;
+}
+
+.page-header p {
+  font-size: 16px;
+  font-weight: 400;
+  margin: auto;
+}
+
+.nav-bar {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  height: 60px;
+  background-color: #4d4d71;
+  margin: 0;
+  padding: 0 45px;
+}
+
+.nav-img {
+  width: 50%;
+  height: 50%;
+  fill: white;
+}
+
+.nav-li {
+  text-align: center;
+  margin: auto;
+}
+
+.dashboard {
+  display: flex;
+}
+
+.dashboard-h1 {
+  padding: 18px 22px 23px 18px;
+  margin: 0;
+}
+
+.dahsboard-empty {
+  margin: 0;
+  background-color: #f6f6f6;
+  width: 100%;
+  border-bottom: #bbb solid 1px;
+  border-left: #bbb solid 1px;
+}
+
+.alert-section {
+  background-color: #7479bd;
+  color: white;
+  font-size: 1.06em;
+  padding: 3px 11px;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+.alert-section p {
+  margin: 10px 5px;
+}
+
+.traffic, .daily-traffic, .mobile-users, .social-stats {
+  padding: 18px;
+  border-bottom: #ccc solid 1px;
+}
+
+.new-members, .recent-activity {
+  padding: 18px;
+  border-bottom: #ccc solid 1px;
+}
+
+#timezones {
+  width: 100%;
+}
+
+.message-user {
+  border-bottom: #ccc solid 1px;
+}
+
+.timezones {
+  color: #a0a0a0;
+}
+
+input, textarea, .timezones {
+  background-color: #eee;
+  border-radius: 8px;
+  border: #ccc solid 1px;
+  padding: 15px;
+  margin: 8px 0;
+}
+
+::placeholder {
+  color: #a0a0a0;
+}
+
+.message-user, .settings {
+  padding: 18px;
+}
+
+.message-form, .settings-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.save-cancel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings-save, .settings-cancel {
+  width: 48%;
+}
+
+.form-button {
+  background-color: #7479bd;
+  color: white;
+  padding: 18px;
+  border-radius: 8px;
+  border: 0;
+}
+
+.settings-cancel {
+  background-color: #999;
+}
+
 /*# sourceMappingURL=styles.css.map */

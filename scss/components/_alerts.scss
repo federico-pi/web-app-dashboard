@@ -1,0 +1,29 @@
+.dashboard {
+  display: flex;
+}
+
+.dashboard-h1 {
+  padding: 18px 22px 23px 18px;
+  margin: 0;
+}
+
+.dahsboard-empty {
+  margin: 0;
+  background-color: $background-color;
+  width: 100%;
+  border-bottom: #bbb solid 1px;
+  border-left: #bbb solid 1px;
+}
+
+.alert-section {
+  background-color: $primary-color;
+  color: white;
+  font-size: 1.06em;
+  padding: 3px 11px;
+  margin: 15px;
+  border-radius: 8px;
+}
+
+.alert-section p {
+  margin: 10px 5px;
+}

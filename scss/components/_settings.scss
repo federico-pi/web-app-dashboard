@@ -1,0 +1,53 @@
+#timezones {
+  width: 100%;
+}
+
+.message-user {
+  border-bottom: #ccc solid 1px;
+}
+
+.timezones {
+  color: #a0a0a0;
+}
+
+input, textarea, .timezones {
+  background-color: #eee;
+  border-radius: 8px;
+  border: #ccc solid 1px;
+  padding: 15px;
+  margin: 8px 0;
+}
+
+::placeholder {
+  color: #a0a0a0;
+}
+
+.message-user, .settings {
+  padding: 18px
+}
+
+.message-form, .settings-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.save-cancel {
+  display: flex;
+  justify-content: space-between;
+}
+
+.settings-save, .settings-cancel {
+  width: 48%;
+}
+
+.form-button {
+  background-color: $primary-color;
+  color: white;
+  padding: 18px;
+  border-radius: 8px;
+  border: 0;
+}
+
+.settings-cancel {
+  background-color: #999;
+}
