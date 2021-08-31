@@ -2,19 +2,19 @@
   list-style-type: none;
   display: flex;
   justify-content: space-around;
-  height: 60px;
+  height: 65px;
   background-color: $secondary-color;
   margin: 0;
   padding: 0 45px;
 }
 
 .nav-img {
-   width: 50%;
-   height: 50%;
+  height: 60%;
    fill: white;
 }
 
 .nav-li {
   text-align: center;
-  margin: auto;
+  margin: 13px auto;
+  height: 100%;
 }

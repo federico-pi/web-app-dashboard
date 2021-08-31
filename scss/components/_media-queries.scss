@@ -1,0 +1,30 @@
+@media (min-width: 768px) {
+    .grid-container {
+  grid-template-columns: 55px 1fr;
+  grid-template-areas:
+    "header header"
+    "nav main";
+  }
+
+  .nav {
+    background-color: $secondary-color;
+  }
+
+  .nav-bar {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .nav-img {
+    height: 100%;
+  }
+
+  .nav-li {
+    height: 30px;
+    margin: 12px auto;
+  }
+}
+
+@media (min-width: 1024px) {
+}

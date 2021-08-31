@@ -358,64 +358,96 @@ p {
   font-weight: 400;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  grid-template-areas: "header" "nav" "main";
+}
+
+.header {
+  grid-area: header;
+}
+
+.nav {
+  grid-area: nav;
+}
+
+.main {
+  grid-area: main;
+}
+
 .page-header {
   display: flex;
   justify-content: space-between;
   background-color: #7479bd;
-  padding: 18px 7px;
+  padding: 14px 7px;
   height: 80px;
   width: 100vw;
   color: white;
 }
 
+.logo-div {
+  margin: auto 10px;
+  text-align: left;
+}
+
 .app-logo {
   font-size: 25px;
   font-weight: 400;
-  margin: auto;
 }
 
 .bell-icon {
   height: 60%;
-  margin: auto;
+  margin: auto 10px auto auto;
   fill: white;
 }
 
 .profile-image {
   border-radius: 50%;
   margin: auto;
-  height: 100%;
+  height: 80%;
+  margin-top: 10%;
 }
 
 .profile-image-div {
   border-left: white solid 1px;
-  padding-left: 13px;
+  padding-left: 12px;
 }
 
 .page-header p {
   font-size: 16px;
   font-weight: 400;
-  margin: auto;
+  margin: auto 10px;
+}
+
+.header-2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: #7479bd;
+  color: white;
+  max-width: 60%;
 }
 
 .nav-bar {
   list-style-type: none;
   display: flex;
   justify-content: space-around;
-  height: 60px;
+  height: 65px;
   background-color: #4d4d71;
   margin: 0;
   padding: 0 45px;
 }
 
 .nav-img {
-  width: 50%;
-  height: 50%;
+  height: 60%;
   fill: white;
 }
 
 .nav-li {
   text-align: center;
-  margin: auto;
+  margin: 13px auto;
+  height: 100%;
 }
 
 .dashboard {
@@ -429,7 +461,7 @@ p {
 
 .dahsboard-empty {
   margin: 0;
-  background-color: #f6f6f6;
+  background-color: #f7f7f7;
   width: 100%;
   border-bottom: #bbb solid 1px;
   border-left: #bbb solid 1px;
@@ -510,6 +542,32 @@ input, textarea, .timezones {
 
 .settings-cancel {
   background-color: #999;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas: "header header" "nav main";
+  }
+
+  .nav {
+    background-color: #4d4d71;
+  }
+
+  .nav-bar {
+    height: auto;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .nav-img {
+    height: 100%;
+  }
+
+  .nav-li {
+    height: 30px;
+    margin: 12px auto;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

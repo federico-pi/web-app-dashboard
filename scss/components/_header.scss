@@ -2,37 +2,50 @@
   display: flex;
   justify-content: space-between;
   background-color: $primary-color;
-  padding: 18px 7px;
+  padding: 14px 7px;
   height: 80px;
   width: 100vw;
   color: white;
 }
 
+.logo-div {
+  margin: auto 10px;
+  text-align: left;
+}
+
 .app-logo {
   font-size: 25px;
   font-weight: 400;
-  margin: auto;
 }
 
 .bell-icon {
   height: 60%;
-  margin: auto;
+  margin: auto 10px auto auto;
   fill: white;
 }
 
 .profile-image {
   border-radius: 50%;
   margin: auto;
-  height: 100%;
+  height: 80%;
+  margin-top: 10%;
 }
 
 .profile-image-div {
   border-left: white solid 1px;
-  padding-left: 13px;
+  padding-left: 12px;
 }
 
 .page-header p {
   font-size: 16px;
   font-weight: 400;
-  margin: auto;
+  margin: auto 10px;
+}
+
+.header-2 {
+  display: flex;
+  justify-content: space-between;
+  background-color: $primary-color;
+  color: white;
+  max-width: 60%;
 }
