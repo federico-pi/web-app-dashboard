@@ -2,3 +2,32 @@
   padding: 18px;
   border-bottom: #ccc solid 1px;
 }
+
+.members-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  border-bottom: #ccc solid 1px;
+}
+
+.members-container img {
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  margin: 15px auto;
+}
+
+.members-container p, .members-container a {
+  margin: 6px auto;
+  font-size: 0.9em;
+}
+
+.members-container a {
+  text-decoration: none;
+  color: $primary-color;
+}
+
+.members-container:last-child {
+  border: none;
+}

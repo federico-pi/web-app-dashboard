@@ -24,6 +24,22 @@
     height: 30px;
     margin: 12px auto;
   }
+
+  // .main {
+  //   grid-template-columns: 50%, 1fr;
+  // }
+  //
+  // .traffic, .social-stats {
+  //   grid-column: 1 / span 2;
+  // }
+  //
+  // .daily, .members, .message {
+  //   grid-column: 1 / span 1;
+  // }
+  //
+  // .mobile, .activity, .settings {
+  //   grid-column: 2 / span 1;
+  // }
 }
 
 @media (min-width: 1024px) {

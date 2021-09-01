@@ -2,3 +2,63 @@
   padding: 18px;
   border-bottom: #ccc solid 1px;
 }
+
+.social-stats {
+  padding-bottom: 7px;
+  border-bottom: #ccc solid 1px;
+}
+
+.traffic-nav {
+  display: flex;
+  list-style-type: none;
+  justify-content: flex-end;
+  padding: 0;
+}
+
+.traffic-nav-link {
+  padding: 10px;
+  background-color: $light-green;
+  color: white;
+  margin: auto;
+  border-top-right-radius: 25%50%;
+  border-top-left-radius: 25%50%;
+  border-bottom-left-radius:25%50%;
+  border-bottom-right-radius: 25%50%;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.facebook-container, .instagram-container, .twitter-container {
+  display: flex;
+  background-color: #eee;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: #bbb solid 1px;
+  height: 100px;
+}
+
+.facebook-text, .instagram-text, .twitter-text {
+  margin: auto 5px;
+}
+
+.facebook-image, .instagram-image, .twitter-image {
+  fill: $primary-color;
+  height: 60px;
+  width: 60px;
+  margin: auto 15px;
+}
+
+.facebook-t, .instagram-t, .twitter-t {
+  font-size: 18px;
+  color: $primary-color;
+  margin: auto;
+}
+
+.facebook-n, .instagram-n, .twitter-n {
+  font-size: 40px;
+  color: #888;
+  margin: 0;
+}
