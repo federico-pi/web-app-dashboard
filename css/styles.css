@@ -381,13 +381,16 @@ p {
   display: grid;
 }
 
+.widget-container-full, .widget-container-half {
+  width: 95vw;
+}
+
 .page-header {
   display: flex;
   justify-content: space-between;
   background-color: #7479bd;
   padding: 14px 7px;
   height: 80px;
-  width: 100vw;
   color: white;
 }
 
@@ -405,6 +408,7 @@ p {
   height: 60%;
   margin: auto 10px auto auto;
   fill: white;
+  cursor: pointer;
 }
 
 .profile-image {
@@ -502,7 +506,13 @@ p {
 }
 
 .traffic-nav-link {
-  padding: 10px;
+  cursor: pointer;
+  margin: auto;
+  color: #444;
+}
+
+.active {
+  padding: 11px 14px;
   background-color: #83c891;
   color: white;
   margin: auto;
@@ -519,7 +529,7 @@ p {
 
 .facebook-container, .instagram-container, .twitter-container {
   display: flex;
-  background-color: #eee;
+  background-color: #f7f7f7;
   margin: 10px 0;
   border-radius: 10px;
   border: #bbb solid 1px;
@@ -545,8 +555,9 @@ p {
 
 .facebook-n, .instagram-n, .twitter-n {
   font-size: 40px;
-  color: #888;
+  color: #666;
   margin: 0;
+  font-weight: 200;
 }
 
 .new-members, .recent-activity {
@@ -572,6 +583,7 @@ p {
 .members-container p, .members-container a {
   margin: 6px auto;
   font-size: 0.9em;
+  font-weight: 200;
 }
 
 .members-container a {
@@ -585,6 +597,8 @@ p {
 
 #timezones {
   width: 100%;
+  cursor: pointer;
+  font-weight: 200;
 }
 
 .message-user {
@@ -596,7 +610,7 @@ p {
 }
 
 input, textarea, .timezones, button {
-  background-color: #eee;
+  background-color: #f7f7f7;
   border-radius: 8px;
   border: #ccc solid 1px;
   padding: 15px;
@@ -605,6 +619,7 @@ input, textarea, .timezones, button {
 
 ::placeholder {
   color: #a0a0a0;
+  font-weight: 200;
 }
 
 .message-user, .settings {
@@ -651,10 +666,10 @@ input, textarea, .timezones, button {
 /* To create surface of toggle button */
 .cm-toggle:after {
   content: "";
-  width: 60px;
-  height: 28px;
+  width: 48px;
+  height: 22px;
   display: inline-block;
-  background: rgba(196, 195, 195, 0.55);
+  background: #999;
   border-radius: 18px;
   clear: both;
 }
@@ -662,8 +677,8 @@ input, textarea, .timezones, button {
 /* Contents before checkbox to create toggle handle */
 .cm-toggle:before {
   content: "";
-  width: 32px;
-  height: 32px;
+  width: 26px;
+  height: 26px;
   display: block;
   position: absolute;
   left: 0;
@@ -688,8 +703,18 @@ input, textarea, .timezones, button {
   height: 50px;
 }
 
+.checkbox2 {
+  margin-bottom: 20px;
+}
+
 .settings-visibility, .settings-notifications {
-  margin-top: 10px;
+  margin-top: 15px;
+  position: absolute;
+  font-weight: 200;
+}
+
+button {
+  cursor: pointer;
 }
 
 @media (min-width: 768px) {
@@ -715,6 +740,144 @@ input, textarea, .timezones, button {
   .nav-li {
     height: 30px;
     margin: 12px auto;
+  }
+
+  .main {
+    grid-template-columns: 50% 1fr;
+  }
+
+  .dash, .traffic, .social-stats, .new-members, .recent-activity, .message-user, .settings {
+    grid-column: 1/span 2;
+  }
+
+  .daily-traffic {
+    grid-column: 1/span 1;
+  }
+
+  .mobile-users {
+    grid-column: 2/span 1;
+  }
+
+  .widget-container-full {
+    width: 90vw;
+  }
+
+  .widget-container-half {
+    width: 45vw;
+  }
+
+  .mobile-users {
+    border-left: #ccc solid 1px;
+  }
+
+  .nav-li {
+    margin-top: 18px;
+  }
+
+  .traffic-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .traffic-nav-link {
+    margin-left: 22px;
+  }
+
+  .traffic-header h2 {
+    margin: auto 0;
+  }
+
+  .traffic {
+    padding-top: 0;
+  }
+
+  .social-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .facebook-container, .instagram-container, .twitter-container {
+    width: 32%;
+  }
+
+  .members-container {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .members-flex-left {
+    display: flex;
+    justify-content: center;
+  }
+
+  .members-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .members-flex-left p {
+    margin: auto auto 2px 15px;
+    align-self: center;
+  }
+
+  .members-flex-left p:last-child {
+    margin: 2px auto auto 15px;
+  }
+
+  .members-flex-left a {
+    margin: 2px auto auto 15px;
+  }
+
+  .members-flex-right {
+    display: flex;
+  }
+
+  .members-flex-right p {
+    align-self: center;
+    margin: auto;
+  }
+
+  .new-members, .recent-activity {
+    padding-bottom: 0;
+  }
+
+  .daily-traffic, .mobile-users, .social-stats, .new-members, .recent-activity, .message-user, .settings {
+    padding-top: 5px;
+  }
+}
+@media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 65px 1fr;
+  }
+
+  .nav-li {
+    height: 38px;
+  }
+
+  .new-members, .message-user {
+    grid-column: 1/span 1;
+  }
+
+  .recent-activity, .settings {
+    grid-column: 2/span 1;
+    border-left: #ccc solid 1px;
+  }
+
+  .facebook-container, .instagram-container, .twitter-container {
+    margin-top: 0;
+  }
+
+  .checkbox1, .checkbox2 {
+    flex-grow: 1;
+  }
+
+  .timezones {
+    margin-top: 40px;
+  }
+
+  .settings h2 {
+    margin-bottom: 20px;
   }
 }
 

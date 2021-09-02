@@ -16,7 +16,13 @@
 }
 
 .traffic-nav-link {
-  padding: 10px;
+  cursor: pointer;
+  margin: auto;
+  color: #444;
+}
+
+.active {
+  padding: 11px 14px;
   background-color: $light-green;
   color: white;
   margin: auto;
@@ -33,7 +39,7 @@
 
 .facebook-container, .instagram-container, .twitter-container {
   display: flex;
-  background-color: #eee;
+  background-color: #f7f7f7;
   margin: 10px 0;
   border-radius: 10px;
   border: #bbb solid 1px;
@@ -59,6 +65,7 @@
 
 .facebook-n, .instagram-n, .twitter-n {
   font-size: 40px;
-  color: #888;
+  color: #666;
   margin: 0;
+  font-weight: 200;
 }

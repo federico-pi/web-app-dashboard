@@ -25,22 +25,141 @@
     margin: 12px auto;
   }
 
-  // .main {
-  //   grid-template-columns: 50%, 1fr;
-  // }
-  //
-  // .traffic, .social-stats {
-  //   grid-column: 1 / span 2;
-  // }
-  //
-  // .daily, .members, .message {
-  //   grid-column: 1 / span 1;
-  // }
-  //
-  // .mobile, .activity, .settings {
-  //   grid-column: 2 / span 1;
-  // }
+  .main {
+    grid-template-columns: 50% 1fr;
+  }
+
+  .dash, .traffic, .social-stats, .new-members, .recent-activity, .message-user, .settings {
+    grid-column: 1 / span 2;
+  }
+
+  .daily-traffic {
+    grid-column: 1 / span 1;
+  }
+
+  .mobile-users {
+    grid-column: 2 / span 1;
+  }
+
+  .widget-container-full {
+      width: 90vw;
+  }
+  .widget-container-half {
+    width: 45vw;
+  }
+
+  .mobile-users {
+    border-left: #ccc solid 1px;
+  }
+
+  .nav-li {
+    margin-top: 18px;
+  }
+
+  .traffic-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .traffic-nav-link {
+    margin-left: 22px;
+  }
+
+  .traffic-header h2 {
+    margin: auto 0;
+  }
+
+  .traffic {
+    padding-top: 0;
+  }
+
+  .social-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .facebook-container, .instagram-container, .twitter-container {
+    width: 32%;
+  }
+
+  .members-container {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .members-flex-left {
+    display: flex;
+    justify-content: center;
+  }
+
+  .members-text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .members-flex-left p {
+    margin: auto auto 2px 15px;
+    align-self: center;
+  }
+
+  .members-flex-left p:last-child {
+    margin: 2px auto auto 15px;
+  }
+
+  .members-flex-left a {
+    margin: 2px auto auto 15px;
+  }
+
+  .members-flex-right {
+    display: flex;
+  }
+
+  .members-flex-right p {
+    align-self: center;
+    margin: auto;
+  }
+
+  .new-members, .recent-activity {
+    padding-bottom: 0;
+  }
+
+  .daily-traffic, .mobile-users, .social-stats, .new-members, .recent-activity, .message-user, .settings {
+    padding-top: 5px;
+  }
 }
 
 @media (min-width: 1024px) {
+  .grid-container {
+    grid-template-columns: 65px 1fr;
+  }
+
+  .nav-li {
+    height: 38px;
+  }
+
+  .new-members, .message-user {
+    grid-column: 1 / span 1;
+  }
+
+  .recent-activity, .settings {
+    grid-column: 2 / span 1;
+    border-left: #ccc solid 1px;
+  }
+
+  .facebook-container, .instagram-container, .twitter-container {
+    margin-top: 0;
+  }
+
+  .checkbox1, .checkbox2 {
+    flex-grow: 1;
+  }
+
+  .timezones {
+    margin-top: 40px;
+  }
+
+  .settings h2 {
+    margin-bottom: 20px;
+  }
 }
