@@ -24,6 +24,26 @@
   cursor: pointer;
 }
 
+@keyframes swing {
+    20% {
+        transform: rotate(10deg);
+    }
+    40% {
+        transform: rotate(-10deg);
+    }
+    60% {
+        transform: rotate(10deg);
+    }
+    80% {
+        transform: rotate(-10deg);
+    }
+}
+
+.bell-icon:hover {
+    animation: swing 0.9s ease-in-out forwards;
+    transform-origin: 50% 0;
+}
+
 .profile-image {
   border-radius: 50%;
   margin: auto;

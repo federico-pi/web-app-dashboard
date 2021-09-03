@@ -51,10 +51,15 @@
 }
 
 .facebook-image, .instagram-image, .twitter-image {
-  fill: $primary-color;
+  fill: white;
   height: 65px;
   width: 65px;
   margin: auto 15px;
+}
+
+.facebook-path, .instagram-path, .twitter-path {
+  transform: scale(0.5);
+  transform-origin: 50% 50%;
 }
 
 .facebook-t, .instagram-t, .twitter-t {
