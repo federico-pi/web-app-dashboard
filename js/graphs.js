@@ -24,7 +24,7 @@ var trafficOptions = {
   // }
 };
 
-var ageChart = new Chart(trafficCanvas, {
+var trafficChart = new Chart(trafficCanvas, {
   type: 'line',
   data: trafficData,
   options: trafficOptions

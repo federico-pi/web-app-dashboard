@@ -9,8 +9,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js" defer></script>
+    <script src="js/graphs.js" defer></script>
     <script src="js/app.js" defer></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   </head>
   <body class="grid-container">
     <header class="header">
@@ -82,21 +83,18 @@
         </div>
         <div class="widget-container-full">
           <canvas id="traffic"></canvas>
-          <script src="js/graphs.js"></script>
         </div>
       </section>
       <section class="daily-traffic">
         <h2>DAILY TRAFFIC</h2>
         <div class="widget-container-half">
           <canvas id="daily" height="180px"></canvas>
-          <script src="js/graphs.js"></script>
         </div>
       </section>
       <section class="mobile-users">
         <h2>MOBILE USERS</h2>
         <div class="widget-container-half">
           <canvas id="mobile" height="180px"></canvas>
-          <script src="js/graphs.js"></script>
         </div>
       </section>
       <section class="social-stats">
@@ -295,5 +293,6 @@
         </div>
       </section>
     </main>
+  </body>
   </body>
 </html>
