@@ -19,11 +19,17 @@
   background-color: $primary-color;
   color: white;
   font-size: 1.06em;
-  padding: 3px 11px;
+  padding: 0 11px;
   margin: 15px;
   border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .alert p {
   margin: 10px 5px;
+}
+
+.alert p:last-child {
+  cursor: pointer;
 }

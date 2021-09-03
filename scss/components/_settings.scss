@@ -4,10 +4,6 @@
   font-weight: 200;
 }
 
-.message-user {
-  border-bottom: #ccc solid 1px;
-}
-
 .timezones {
   color: #a0a0a0;
 }
@@ -26,7 +22,8 @@ input, textarea, .timezones, button {
 }
 
 .message-user, .settings {
-  padding: 18px
+  padding: 18px;
+  border-bottom: #ccc solid 1px;
 }
 
 .message-form, .settings {
@@ -78,6 +75,7 @@ input, textarea, .timezones, button {
 	background: #999;
 	border-radius: 18px;
 	clear: both;
+  margin-top: 2px;
 }
 
 
@@ -95,6 +93,7 @@ input, textarea, .timezones, button {
 	border-radius: 50%;
 	background: rgb(255, 255, 255);
 	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  margin-top: 2px;
 }
 
 
@@ -102,10 +101,12 @@ input, textarea, .timezones, button {
 .cm-toggle:checked:before {
 	left: 32px;
 	box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
+  margin-top: 2px;
 }
 /* Background color when toggle button will be active */
 .cm-toggle:checked:after {
 	background: $primary-color;
+  margin-top: 2px;
 }
 
 .checkbox1, .checkbox2 {
@@ -120,8 +121,13 @@ input, textarea, .timezones, button {
   margin-top: 15px;
   position: absolute;
   font-weight: 200;
+  font-size: 18px;
 }
 
 button {
   cursor: pointer;
+}
+
+.checkbox1, .checkbox2 {
+  max-width: 360px;
 }

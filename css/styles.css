@@ -479,13 +479,19 @@ p {
   background-color: #7479bd;
   color: white;
   font-size: 1.06em;
-  padding: 3px 11px;
+  padding: 0 11px;
   margin: 15px;
   border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .alert p {
   margin: 10px 5px;
+}
+
+.alert p:last-child {
+  cursor: pointer;
 }
 
 .traffic, .daily-traffic, .mobile-users, .social-stats {
@@ -542,8 +548,8 @@ p {
 
 .facebook-image, .instagram-image, .twitter-image {
   fill: #7479bd;
-  height: 60px;
-  width: 60px;
+  height: 65px;
+  width: 65px;
   margin: auto 15px;
 }
 
@@ -575,8 +581,8 @@ p {
 
 .members-container img {
   border-radius: 50%;
-  height: 75px;
-  width: 75px;
+  height: 73px;
+  width: 73px;
   margin: 15px auto;
 }
 
@@ -601,10 +607,6 @@ p {
   font-weight: 200;
 }
 
-.message-user {
-  border-bottom: #ccc solid 1px;
-}
-
 .timezones {
   color: #a0a0a0;
 }
@@ -624,6 +626,7 @@ input, textarea, .timezones, button {
 
 .message-user, .settings {
   padding: 18px;
+  border-bottom: #ccc solid 1px;
 }
 
 .message-form, .settings {
@@ -672,6 +675,7 @@ input, textarea, .timezones, button {
   background: #999;
   border-radius: 18px;
   clear: both;
+  margin-top: 2px;
 }
 
 /* Contents before checkbox to create toggle handle */
@@ -686,17 +690,20 @@ input, textarea, .timezones, button {
   border-radius: 50%;
   background: white;
   box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+  margin-top: 2px;
 }
 
 /* Shift the handle to left on check event */
 .cm-toggle:checked:before {
   left: 32px;
   box-shadow: -1px 1px 3px rgba(0, 0, 0, 0.6);
+  margin-top: 2px;
 }
 
 /* Background color when toggle button will be active */
 .cm-toggle:checked:after {
   background: #7479bd;
+  margin-top: 2px;
 }
 
 .checkbox1, .checkbox2 {
@@ -711,10 +718,15 @@ input, textarea, .timezones, button {
   margin-top: 15px;
   position: absolute;
   font-weight: 200;
+  font-size: 18px;
 }
 
 button {
   cursor: pointer;
+}
+
+.checkbox1, .checkbox2 {
+  max-width: 360px;
 }
 
 @media (min-width: 768px) {
@@ -838,6 +850,14 @@ button {
     margin: auto;
   }
 
+  .settings-save, .settings-cancel {
+    width: 49%;
+  }
+
+  .checkbox1, .checkbox2 {
+    width: 290px;
+  }
+
   .new-members, .recent-activity {
     padding-bottom: 0;
   }
@@ -870,6 +890,11 @@ button {
 
   .checkbox1, .checkbox2 {
     flex-grow: 1;
+  }
+
+  .members-container img {
+    height: 65px;
+    width: 65px;
   }
 
   .timezones {

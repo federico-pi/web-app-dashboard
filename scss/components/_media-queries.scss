@@ -120,6 +120,14 @@
     margin: auto;
   }
 
+  .settings-save, .settings-cancel {
+    width: 49%;
+  }
+
+  .checkbox1, .checkbox2 {
+    width: 290px;
+  }
+
   .new-members, .recent-activity {
     padding-bottom: 0;
   }
@@ -153,6 +161,11 @@
 
   .checkbox1, .checkbox2 {
     flex-grow: 1;
+  }
+
+  .members-container img {
+    height: 65px;
+    width: 65px;
   }
 
   .timezones {
