@@ -120,6 +120,15 @@
     margin: auto;
   }
 
+  .activity-shortcut {
+    color: $primary-color;
+    cursor: pointer;
+  }
+
+  .members-text p {
+    text-align: left;
+  }
+
   .settings-save, .settings-cancel {
     width: 49%;
   }

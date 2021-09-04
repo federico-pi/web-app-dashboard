@@ -379,6 +379,7 @@ p {
 
 .main {
   display: grid;
+  grid-template-columns: 100%;
 }
 
 .widget-container-full, .widget-container-half {
@@ -514,7 +515,7 @@ p {
 }
 
 .traffic, .daily-traffic, .mobile-users, .social-stats {
-  padding: 18px;
+  padding: 10px;
   border-bottom: #ccc solid 1px;
 }
 
@@ -591,7 +592,7 @@ p {
 }
 
 .new-members, .recent-activity {
-  padding: 18px;
+  padding: 10px;
   border-bottom: #ccc solid 1px;
 }
 
@@ -625,6 +626,11 @@ p {
   border: none;
 }
 
+.message-user, .settings {
+  padding: 10px;
+  border-bottom: #ccc solid 1px;
+}
+
 #timezones {
   width: 100%;
   cursor: pointer;
@@ -632,7 +638,7 @@ p {
 }
 
 .timezones {
-  color: #a0a0a0;
+  color: #aaa;
 }
 
 input, textarea, .timezones, button {
@@ -644,13 +650,8 @@ input, textarea, .timezones, button {
 }
 
 ::placeholder {
-  color: #a0a0a0;
+  color: #aaa;
   font-weight: 200;
-}
-
-.message-user, .settings {
-  padding: 18px;
-  border-bottom: #ccc solid 1px;
 }
 
 .message-form, .settings {
@@ -872,6 +873,15 @@ button {
   .members-flex-right p {
     align-self: center;
     margin: auto;
+  }
+
+  .activity-shortcut {
+    color: #7479bd;
+    cursor: pointer;
+  }
+
+  .members-text p {
+    text-align: left;
   }
 
   .settings-save, .settings-cancel {

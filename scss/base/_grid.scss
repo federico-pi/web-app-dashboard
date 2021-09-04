@@ -22,6 +22,7 @@
 
 .main {
   display: grid;
+  grid-template-columns: 100%;
 }
 
 .widget-container-full, .widget-container-half {
