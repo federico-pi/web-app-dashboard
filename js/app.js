@@ -27,3 +27,21 @@ send.addEventListener('click', () => {
   alert(`Message successfully sent to ${user.value}`);
   }
 });
+
+const bellIcon = document.querySelector('.bell-icon');
+const dropdownMenu = document.querySelector('.dropdown-menu')
+const closeButton = document.getElementsByClassName('close-button')
+const notificationContainer = document.getElementsByClassName('notification-container')
+
+bellIcon.addEventListener('click', () => {
+  dropdownMenu.classList.remove('hide')
+})
+
+dropdownMenu.addEventListener('click', (e) => {
+  if (e.target.classList.contains('close-button')) {
+    e.target.parentNode.classList.add('hide');
+  }
+});
+
+const saveSettings = document.querySelector('settings-save')
+const closeSettings = document.querySelector('settings-close')

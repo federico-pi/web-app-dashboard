@@ -457,6 +457,47 @@ p {
   max-width: 60%;
 }
 
+.dropdown-menu {
+  position: absolute;
+  top: 65px;
+  right: 140px;
+}
+
+.notification-container {
+  display: flex;
+  justify-content: space-between;
+  background: #fff;
+  text-align: left;
+  width: 110%;
+  border: 1px solid #bbb;
+}
+
+.notification-container p {
+  font-size: 0.8em;
+}
+
+.notification-container img {
+  height: 0.8em;
+  width: 0.8em;
+  margin: auto auto auto 10px;
+}
+
+.close-button {
+  margin: auto 5px auto auto;
+  padding: 4px 6px;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: darkred;
+  color: white;
+  border-radius: 20%;
+}
+
+.hide {
+  display: none;
+}
+
 .nav-bar {
   list-style-type: none;
   display: flex;
@@ -483,7 +524,7 @@ p {
 }
 
 .dashboard-h1 {
-  padding: 18px 22px 23px 18px;
+  padding: 18px 18px 23px;
   margin: 0;
 }
 
@@ -515,7 +556,7 @@ p {
 }
 
 .traffic, .daily-traffic, .mobile-users, .social-stats {
-  padding: 10px;
+  padding: 18px;
   border-bottom: #ccc solid 1px;
 }
 
@@ -524,7 +565,7 @@ p {
   border-bottom: #ccc solid 1px;
 }
 
-.traffic-nav {
+.traffic-navigation {
   display: flex;
   list-style-type: none;
   justify-content: flex-end;
@@ -592,7 +633,7 @@ p {
 }
 
 .new-members, .recent-activity {
-  padding: 10px;
+  padding: 18px;
   border-bottom: #ccc solid 1px;
 }
 
@@ -627,7 +668,7 @@ p {
 }
 
 .message-user, .settings {
-  padding: 10px;
+  padding: 18px;
   border-bottom: #ccc solid 1px;
 }
 

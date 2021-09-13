@@ -32,6 +32,23 @@
           <p>Fred Balzi</p>
         </div>
       </div>
+      <div class="dropdown-menu hide">
+        <div class="notification-container">
+          <img src="images/green-dot.png">
+          <p>You have 6 new messages</p>
+          <p class="close-button">x</p>
+        </div>
+        <div class="notification-container">
+          <img src="images/green-dot.png">
+          <p>You have 3 new followers</p>
+          <p class="close-button">x</p>
+        </div>
+        <div class="notification-container">
+          <img src="images/green-dot.png">
+          <p>Your password expires soon</p>
+          <p class="close-button">x</p>
+        </div>
+      </div>
     </header>
     <nav class="nav">
       <ul class="nav-bar">
@@ -78,7 +95,7 @@
       <section id="charts" class="traffic">
         <div class="traffic-header">
           <h2>TRAFFIC</h2>
-          <ul class="traffic-nav">
+          <ul class="traffic-navigation">
             <li class="traffic-nav-link active">Hourly</li>
             <li class="traffic-nav-link">Daily</li>
             <li class="traffic-nav-link">Weekly</li>
@@ -247,7 +264,17 @@
       <section class="message-user">
         <h2>MESSAGE USER</h2>
         <form class="message-form" action="index.html" method="post">
-          <input type="search" id="user-field" placeholder="Search for user" required>
+          <datalist id="user-names">
+            <option value="Wilson Andrews">
+            <option value="Sarah Brown">
+            <option value="Victoria Duncan">
+            <option value="Daniel Powell">
+            <option value="Jaylynn Clayton">
+            <option value="Josh Cox">
+            <option value="Terrell Conner">
+            <option value="Chelsea Fletcher">
+          </datalist>
+          <input type="search" id="user-field" placeholder="Search for user" list="user-names" required>
           <textarea name="user_message" id="message-field" rows="7" cols="20" placeholder="Message for user" required></textarea>
           <button class="form-button" id="send">SEND</button>
         </form>
