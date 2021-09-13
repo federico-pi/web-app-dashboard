@@ -11,7 +11,6 @@ alertBanner.addEventListener('click', e => {
 })
 
 // --MESSAGE USERS--
-
 const user = document.getElementById("user-field");
 const message = document.getElementById("message-field");
 const send = document.getElementById("send");
@@ -28,6 +27,7 @@ send.addEventListener('click', () => {
   }
 });
 
+// --DROPDOWN MENU NOTIFICATIONS--
 const bellIcon = document.querySelector('.bell-icon');
 const dropdownMenu = document.querySelector('.dropdown-menu')
 const closeButton = document.getElementsByClassName('close-button')
@@ -43,5 +43,48 @@ dropdownMenu.addEventListener('click', (e) => {
   }
 });
 
-const saveSettings = document.querySelector('settings-save')
-const closeSettings = document.querySelector('settings-close')
+// --LOCAL STORAGE--
+const saveCancel = document.getElementById('save-cancel');
+const notificationSettings = document.getElementById('settings-notifications');
+const visibilitySettings = document.getElementById('settings-visibility');
+const timezone = document.getElementById('timezones');
+
+function loadStorage() {
+    if (localStorage.getItem('notifications') !== null && localStorage.getItem('notifications') === "true") {
+    notificationSettings.checked = Boolean.valueOf(localStorage.getItem('notifications'));
+    }
+    if (localStorage.getItem('visibility') !== null && localStorage.getItem('visibility') === "true") {
+    visibilitySettings.checked = Boolean.valueOf(localStorage.getItem('visibility'));
+    }
+    if(localStorage.getItem('timezone') !== null) {
+    timezone.value = localStorage.getItem('timezone');
+    }
+}
+
+loadStorage();
+
+saveCancel.addEventListener('click', (e) => {
+  if (e.target.className === 'settings-save form-button') {
+    let notificationString = notificationSettings.checked.toString();
+    localStorage.setItem('notifications', notificationString);
+    let visibilityString = visibilitySettings.checked.toString();
+    localStorage.setItem('visibility', visibilityString);
+    let timezoneString = timezone.value;
+    localStorage.setItem('timezone', timezoneString);
+    if (notificationSettings.checked === false && visibilitySettings.checked === false && timezone.value === 'default') {
+      return null
+    } else {
+      alert("Awesome, your settings will be remembered!")
+    }
+  } else if (e.target.className === 'settings-cancel form-button') {
+    localStorage.clear();
+    timezone.value = 'default';
+    notificationSettings.checked = false;
+    visibilitySettings.checked = false;
+    if (notificationSettings.checked === false && visibilitySettings.checked === false && timezone.value === 'default') {
+      return null
+    } else {
+      alert('Your settings have been reset.')
+    }
+  }
+});

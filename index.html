@@ -96,9 +96,9 @@
         <div class="traffic-header">
           <h2>TRAFFIC</h2>
           <ul class="traffic-navigation">
-            <li class="traffic-nav-link active">Hourly</li>
+            <li class="traffic-nav-link">Hourly</li>
             <li class="traffic-nav-link">Daily</li>
-            <li class="traffic-nav-link">Weekly</li>
+            <li class="traffic-nav-link active">Weekly</li>
             <li class="traffic-nav-link">Monthly</li>
           </ul>
         </div>
@@ -290,7 +290,7 @@
           <input type="checkbox" name="user_visibility" class="cm-toggle" id="settings-visibility">
         </div>
         <select class="timezones" name="user_timezone" id="timezones">
-          <option value="State_0" hidden>Select Timezone</option>
+          <option value="default" hidden>Select Timezone</option>
           <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
         	<option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
         	<option value="-10:00">(GMT -10:00) Hawaii</option>
@@ -332,7 +332,7 @@
         	<option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
         	<option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
         </select>
-        <div class="save-cancel">
+        <div class="save-cancel" id="save-cancel">
           <button class="settings-save form-button">SAVE</button>
           <button class="settings-cancel form-button">CANCEL</button>
         </div>
