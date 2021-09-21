@@ -10,6 +10,7 @@ html {
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
+  scroll-behavior: smooth;
 }
 
 /* Sections
@@ -375,11 +376,11 @@ p {
 
 .main {
   grid-area: main;
-}
-
-.main {
   display: grid;
   grid-template-columns: 100%;
+  padding-top: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .widget-container-full, .widget-container-half {
@@ -406,7 +407,8 @@ p {
 }
 
 .bell-icon {
-  height: 60%;
+  height: 35px;
+  width: 35px;
   margin: auto 10px auto auto;
   fill: white;
   cursor: pointer;
@@ -441,12 +443,15 @@ p {
 .profile-image-div {
   border-left: white solid 1px;
   padding-left: 12px;
+  height: 52px;
+  width: 52px;
 }
 
 .page-header p {
   font-size: 16px;
   font-weight: 400;
   margin: auto 10px;
+  color: white;
 }
 
 .header-2 {
@@ -509,7 +514,8 @@ p {
 }
 
 .nav-img {
-  height: 60%;
+  height: 40px;
+  width: 40px;
   fill: white;
 }
 
@@ -538,7 +544,6 @@ p {
 
 .alert {
   background-color: #7479bd;
-  color: white;
   font-size: 1.06em;
   padding: 0 11px;
   margin: 15px;
@@ -549,6 +554,7 @@ p {
 
 .alert p {
   margin: 10px 5px;
+  color: white;
 }
 
 .alert p:last-child {
@@ -792,7 +798,7 @@ button {
 }
 
 .checkbox1, .checkbox2 {
-  max-width: 360px;
+  max-width: 315px;
 }
 
 @media (min-width: 768px) {
@@ -943,7 +949,7 @@ button {
 }
 @media (min-width: 1024px) {
   .grid-container {
-    grid-template-columns: 65px 1fr;
+    grid-template-columns: 62px 1fr;
   }
 
   .nav-li {
