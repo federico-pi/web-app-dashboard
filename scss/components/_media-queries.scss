@@ -1,9 +1,9 @@
 @media (min-width: 768px) {
-    .grid-container {
-  grid-template-columns: 55px 1fr;
-  grid-template-areas:
-    "header header"
-    "nav main";
+  .grid-container {
+    grid-template-columns: 55px 1fr;
+    grid-template-areas:
+      'header header'
+      'nav main';
   }
 
   .nav {
@@ -42,7 +42,7 @@
   }
 
   .widget-container-full {
-      width: 100%;
+    width: 100%;
   }
   .widget-container-half {
     width: 95%;
@@ -148,7 +148,7 @@
 
 @media (min-width: 1024px) {
   .grid-container {
-    grid-template-columns: 65px 1fr;
+    grid-template-columns: 62px 1fr;
   }
 
   .nav-li {

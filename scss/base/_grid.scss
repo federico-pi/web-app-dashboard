@@ -18,11 +18,11 @@
 
 .main {
   grid-area: main;
-}
-
-.main {
   display: grid;
   grid-template-columns: 100%;
+  padding-top: 0;
+  margin: 0;
+  width: 100%;
 }
 
 .widget-container-full, .widget-container-half {
